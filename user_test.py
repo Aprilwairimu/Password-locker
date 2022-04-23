@@ -5,8 +5,8 @@ class TestUser (unittest.TestCase):
     def setUp(self):
         self.new_user = User("April","A123$")
 
-    # def tearDown(self):
-    #     User.User_list =[]
+    def tearDown(self):
+        User.User_list =[]
 
     def test_init(self):
         self.assertEqual(self.new_user.user_name,"April")
@@ -17,11 +17,11 @@ class TestUser (unittest.TestCase):
         self.assertEqual(len(User.User_list),1)
 
     def test_delete_user(self):
-          self.new_user.save_user()
-          test_user = ("Instagram","username","1234#") # new contact
-          test_user.save_user() 
-          self.new_user.delete_user()# Deleting a credential object
-          self.assertEqual(len(User.User_list),1)
+        self.new_user.save_user()
+        test_user = User("username","A123$") # new contact
+        test_user.save_user() 
+        self.new_user.delete_user()# Deleting a contact object
+        self.assertEqual(len(User.User_list),1)
 
     def test_display_all_user(self):
           '''
