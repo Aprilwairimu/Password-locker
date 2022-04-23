@@ -1,3 +1,7 @@
+import random
+import string
+
+
 class Credentials:
     """"
     Class that generates credential for the user
@@ -23,13 +27,18 @@ class Credentials:
         return cls.Credentials_list
 
     @classmethod
-    def find_credential(cls, app_name):
+    def find_credentials(cls, app_name):
         """
         Method that takes in a app_name and returns a credential
         """
-        for credential in cls.credentials_list:
-            if credential.app_name == app_name:
-                return credential
+        for credentials in cls.credentials_list:
+            if credentials.app_name == app_name:
+                return credentials
+
+    def generatePassword(stringLength=8):
+        """Generate a random password string of letters and digits and special characters"""
+        password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"
+        return ''.join(random.choice(password) for i in range(stringLength))
 
 
 
