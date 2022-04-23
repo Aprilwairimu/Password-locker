@@ -23,6 +23,15 @@ class TestUser (unittest.TestCase):
           self.new_user.delete_user()# Deleting a credential object
           self.assertEqual(len(User.User_list),1)
 
+    def test_display_all_user(self):
+          '''
+          method that returns a list of all user saved
+          '''
+
+          self.assertEqual(User.display_user(),User.User_list)
+
+    
+
 
 
 
