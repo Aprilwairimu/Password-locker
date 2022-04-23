@@ -1,0 +1,23 @@
+classes
+1.credentials
+(
+appName:twitter
+app username:kisha
+password:abcde
+email,
+phone_number1.saveExistingDetails
+2.creat and save newDetails
+3.autogenerate password
+4.setPassword
+5.saveCredentials
+6.displayCredentials
+7.deletecredentials)
+
+2. user
+(
+    lockerUsername
+    lockerPassword    functions
+    1.createAccount(username,password)
+    2.saveUser
+    3.login
+)
