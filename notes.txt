@@ -5,7 +5,8 @@ appName:twitter
 app username:kisha
 password:abcde
 email,
-phone_number1.saveExistingDetails
+phone_number
+1.saveExistingDetails
 2.creat and save newDetails
 3.autogenerate password
 4.setPassword
