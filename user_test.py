@@ -16,6 +16,13 @@ class TestUser (unittest.TestCase):
         self.new_user.save_user()
         self.assertEqual(len(User.User_list),1)
 
+    def test_delete_user(self):
+          self.new_user.save_user()
+          test_user = ("Instagram","username","1234#") # new contact
+          test_user.save_user() 
+          self.new_user.delete_user()# Deleting a credential object
+          self.assertEqual(len(User.User_list),1)
+
 
 
 
