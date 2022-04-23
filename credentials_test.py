@@ -38,7 +38,7 @@ class TestCredentials (unittest.TestCase):
           test_credentials = Credentials("Instagram","username","1234#") # new contact
           test_credentials.save_credentials() 
           self.new_credentials.display_credentials()# Deleting a credential object
-          self.assertEqual(len(Credentials.Credentials_list),1)
+          self.assertEqual(len(Credentials.Credentials_list),2)
 
 
 

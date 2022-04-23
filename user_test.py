@@ -23,6 +23,14 @@ class TestUser (unittest.TestCase):
         self.new_user.delete_user()# Deleting a contact object
         self.assertEqual(len(User.User_list),1)
 
+    def test_verify_user(self):
+        self.new_user.save_user()
+        test_user = User("username","A123$") # new contact
+        test_user.save_user() 
+        self.assertEqual(len(User.User_list),2)
+        
+
+
     def test_display_all_user(self):
           '''
           method that returns a list of all user saved

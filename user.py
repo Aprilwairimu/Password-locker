@@ -34,10 +34,11 @@ class User:
         return cls.User_list
 
 
+    def login_user(username,password):
+        """
+        function that checks whether a user exist and then login the user in.
+        """
+    
+        check_user = User.verify_user(username,password)
+        return check_user
 
-    # @classmethod
-    # def login(cls):
-    #     '''
-    #     method that returns the credentials list
-    #     '''
-    #     return cls.Credentials
