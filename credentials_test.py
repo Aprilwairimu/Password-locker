@@ -6,6 +6,9 @@ class TestCredentials (unittest.TestCase):
         self.new_credentials = Credentials("Facebook","April","A123#")
     
 
+    def tearDown(self):
+        Credentials.Credentials_list =[]
+
     def test_init(self):
         self.assertEqual(self.new_credentials.app_name,"Facebook")
         self.assertEqual(self.new_credentials.user_name,"April")
@@ -21,6 +24,13 @@ class TestCredentials (unittest.TestCase):
           test_credential = Credentials("Instagram","username","1234#") # new contact
           test_credential.save_credentials()
           self.assertEqual(len(Credentials.Credentials_list),2)
+
+    def test_display_all_credentials(self):
+          '''
+          method that returns a list of all credentials saved
+          '''
+
+          self.assertEqual(Credentials.display_credentials(),Credentials.Credentials_list)
 
 
 

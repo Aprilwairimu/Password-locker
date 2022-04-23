@@ -15,6 +15,14 @@ class Credentials:
 #     # def delete_contact(self):
 #     #     Credentials.Credentials_list.remove(self)
 
+    @classmethod
+    def display_credentials(cls):
+        '''
+        method that returns the credentials list
+        '''
+        return cls.Credentials_list
+
+
 
 
             
