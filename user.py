@@ -15,16 +15,16 @@ class User:
     def delete_user(self):
         User.User_list.remove(self)
 
-    @classmethod
-    def verify_user(cls,username, password):
-        """
-        method to verify whether the user is in our user_list or not
-        """
-        a_user = ""
-        for user in User.user_list:
-            if(user.username == username and user.password == password):
-                    a_user == user.username
-        return a_user
+    # @classmethod
+    # def verify_user(cls,username, password):
+    #     """
+    #     method to verify whether the user is in our user_list or not
+    #     """
+    #     a_user = ""
+    #     for user in User.user_list:
+    #         if(user.username == username and user.password == password):
+    #                 a_user == user.username
+    #     return a_user
 
     @classmethod
     def display_user(cls):

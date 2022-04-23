@@ -22,19 +22,14 @@ class Credentials:
         '''
         return cls.Credentials_list
 
-    # @classmethod
-    # def generate_password(cls):
-    #     """
-    #     method that generate passwords
-    #     """
-    #     return cls.password
-
-    # @classmethod
-    # def autogenerate_password(cls):
-    #     """
-    #     method that autogenerates passwords
-    #     """
-    #     return cls.password
+    @classmethod
+    def find_credential(cls, app_name):
+        """
+        Method that takes in a app_name and returns a credential
+        """
+        for credential in cls.credentials_list:
+            if credential.app_name == app_name:
+                return credential
 
 
 
