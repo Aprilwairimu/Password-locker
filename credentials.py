@@ -22,6 +22,20 @@ class Credentials:
         '''
         return cls.Credentials_list
 
+    # @classmethod
+    # def generate_password(cls):
+    #     """
+    #     method that generate passwords
+    #     """
+    #     return cls.password
+
+    # @classmethod
+    # def autogenerate_password(cls):
+    #     """
+    #     method that autogenerates passwords
+    #     """
+    #     return cls.password
+
 
 
 
