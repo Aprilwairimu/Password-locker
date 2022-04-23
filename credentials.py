@@ -31,9 +31,9 @@ class Credentials:
         """
         Method that takes in a app_name and returns a credential
         """
-        for credentials in cls.credentials_list:
-            if credentials.app_name == app_name:
-                return credentials
+        for credential in cls.Credentials_list:
+            if credential.app_name == app_name:
+                return credential
 
     def generatePassword(stringLength=8):
         """Generate a random password string of letters and digits and special characters"""
