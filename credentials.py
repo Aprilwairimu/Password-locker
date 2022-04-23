@@ -8,4 +8,11 @@ class Credentials:
         self.app_name =app_name
         self.app_name =user_name
         self.app_name =password
+    
+    def save_credentials(self):
+        Credentials.Credentials_list.append(self)
+
+    # def delete_contact(self):
+    #     Credentials.Credentials_list.remove(self)
+
             
