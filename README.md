@@ -11,8 +11,8 @@ Password locker is a python application that helps a user to store  all the pass
 
 ## RUNNING THE APPLICATION
 
--$ chmod +x run.py
--$ ./run.py
+:small_blue_diamond: $ chmod +x run.py
+:small_blue_diamond: $ ./run.py
 
 ### :pushpin:PROJECT SETUP INSTRUCTIONS
 
