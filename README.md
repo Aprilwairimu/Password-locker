@@ -2,7 +2,7 @@
 
 ## PROJECT PREVIEW
 
-![GITHUB SEARCH APP](src/assets/project%20sreenshot/Screenshot%201.png)
+![PASSWORD LOCKER](src/assets/project%20sreenshot/Screenshot%201.png)
 
 
 ### PROJECT DESCRIPTION
@@ -11,8 +11,8 @@ Password locker is a python application that helps a user to store  all the pass
 
 ## RUNNING THE APPLICATION
 
-$ chmod +x interface.py
-$ ./interface.py
+$ chmod +x run.py
+$ ./run.py
 
 ### :pushpin:PROJECT SETUP INSTRUCTIONS
 

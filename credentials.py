@@ -16,7 +16,7 @@ class Credentials:
     def save_credentials(self):
         Credentials.Credentials_list.append(self)
 
-    def delete_contact(self):
+    def delete_credentials(self):
         Credentials.Credentials_list.remove(self)
 
     @classmethod
