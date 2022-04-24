@@ -65,9 +65,9 @@ def main():
         print("Hello Welcome to your Password locker.What is your name?")
         user_name = input()
 
-        print(f"Hello {user_name}. would you like to login(LOGIN) use y for yes and n for no")
+        print(f"Hello {user_name}. would you like to login(LOGIN)")
         print('\n')
-        Option=input()
+        # Option=input()
 
         print("Use these short codes : ca - create a new account, dc - display credentials, fc -find a credentials, ex -exit the credentials list ")
 
@@ -84,8 +84,36 @@ def main():
 
             save_user(create_user(user_name,password))
             print(f"New Account {user_name} {password} created")
-            print("/n")
+            print("\n")
             print(f"user_name:{user_name}/n password:{password}")
+
+        elif short_code =="dc":
+            if display_credentials():
+                print("Here is a list of all your accounts")
+                print('\n')
+                
+                for credential in display_credentials():
+                    print("{credential.app_name } {credential.user_name} {credential.password")
+                    print("\n")
+            else:
+                print("\n")
+                print("You don't seem to have any accounts saved yet")
+                print("\n")
+
+        # elif short_code == 'fc':
+
+        #             print("Enter the number you want to search for")
+
+        #             search_number = input()
+        #             if find_credentials(search_number):
+        #                     search_credentials = find)credentials(search_number)
+        #                     print(f"{search_credentials.app_name} {search_credentials.user_name}")
+        #                     print('-' * 20)
+
+        #                     print(f"Password.......{search_credentials.password}")
+                           
+        #             else:
+        #                     print("That contact does not exist")
    
         
 
