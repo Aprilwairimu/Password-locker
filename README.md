@@ -2,7 +2,7 @@
 
 ## PROJECT PREVIEW
 
-![PASSWORD LOCKER](src/assets/project%20sreenshot/Screenshot%201.png)
+![PASSWORD LOCKER](assets/Screenshot%20.png)
 
 
 ### PROJECT DESCRIPTION
@@ -11,8 +11,8 @@ Password locker is a python application that helps a user to store  all the pass
 
 ## RUNNING THE APPLICATION
 
-$ chmod +x run.py
-$ ./run.py
+-$ chmod +x run.py
+-$ ./run.py
 
 ### :pushpin:PROJECT SETUP INSTRUCTIONS
 
@@ -37,7 +37,7 @@ The technologies are ;
 :small_blue_diamond: PYTHON 3.9
 
 
-### LINK TO VIEW SITE
+### LINK TO VIEW CODE
 
 https://github.com/Aprilwairimu/Password-locker.git
 
