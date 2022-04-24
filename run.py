@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.9
 # from profile import run
+from optparse import Option
 from credentials import Credentials
 from user import User
 import string
@@ -16,13 +17,13 @@ def save_user(user):
     """
     Function to save user
     """
-    User.save_user()
+    user.save_user()
 
 def delete_user(user):
     """
     Function to delete user
     """
-    User.delete_user()
+    user.delete_user()
 
 def display_user(cls):
         '''
@@ -39,13 +40,13 @@ def create_credentials(app_name,user_name,password):
     new_credentials = Credentials(app_name,user_name,password)
     return new_credentials
 
-def save_credentials(user):
+def save_credentials(credentials):
     """
     Function to save credentials
     """
     Credentials.save_credentials()
 
-def delete_credentials(user):
+def delete_credentials(credentials):
     """
     Function to delete credentials
     """
@@ -60,7 +61,46 @@ def display_credentials(cls):
 
 
 def main():
-    print("")
+    while True:
+        print("Hello Welcome to your Password locker.What is your name?")
+        user_name = input()
+
+        print(f"Hello {user_name}. would you like to login(LOGIN) use y for yes and n for no")
+        print('\n')
+        Option=input()
+
+        print("Use these short codes : ca - create a new account, dc - display credentials, fc -find a credentials, ex -exit the credentials list ")
+
+
+        short_code = input().lower()
+
+        if short_code == "ca":
+            print("LOGIN")
+            print("user_name")
+            user_name = input()
+
+            print("password")
+            password = input()
+
+            save_user(create_user(user_name,password))
+            print(f"New Account {user_name} {password} created")
+            print("/n")
+            print(f"user_name:{user_name}/n password:{password}")
+   
+        
+
+            
+
+
+
+        
+
+
+if __name__ == '__main__':
+    main()
+        
+
+    
 
 
 
