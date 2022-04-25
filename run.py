@@ -66,6 +66,14 @@ def find_credentials(credentials):
     """
     return Credentials.find_credentials()
 
+def existing_credentials ():
+    """
+    method that finds existing credentials
+    """
+    return Credentials.existing_credentials()
+
+
+
 
 
 def main():
@@ -120,7 +128,7 @@ def main():
 
                     search_credentials = input()
                     if find_credentials(search_credentials):
-                            search_credentials = find_credentials(search_credentials)
+                            search_credentials = delete_credentials(search_credentials)
                             print(f"{search_credentials.app_name} {search_credentials.user_name}")
                             print('-' * 20)
 

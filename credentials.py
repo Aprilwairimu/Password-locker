@@ -35,6 +35,16 @@ class Credentials:
             if credential.app_name == app_name:
                 return credential
 
+    @classmethod
+    def credentials_exist(cls,app_name):
+        """
+        method to check if an account exists from the credentials list.
+        """
+        for credential in cls.Credentials_list:
+            if credential.app_name == app_name:
+                return True
+    
+
     def generatePassword(stringLength=8):
         """Generate a random password string of letters and digits and special characters"""
         password = string.ascii_uppercase + string.ascii_lowercase + string.digits + "~!@#$%^&*"

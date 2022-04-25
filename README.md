@@ -2,7 +2,7 @@
 
 ## PROJECT PREVIEW
 
-![PASSWORD LOCKER](assets/Screenshot%20.png)
+![PASSWORD LOCKER](assets/Screenshot.png)
 
 
 ### PROJECT DESCRIPTION
