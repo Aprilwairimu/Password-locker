@@ -15,6 +15,7 @@ class User:
     def delete_user(self):
         User.User_list.remove(self)
 
+
     @classmethod
     def display_user(cls):
         '''

@@ -11,7 +11,7 @@ class TestCredentials (unittest.TestCase):
 
     def test_init(self):
         self.assertEqual(self.new_credentials.app_name,"Facebook")
-        self.assertEqual(self.new_credentials.user_name,"April")
+        self.assertEqual(self.new_credentials.username,"April")
         self.assertEqual(self.new_credentials.password,"A123#")
 
     
