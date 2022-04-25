@@ -27,7 +27,7 @@ def delete_user(user):
     """
     user.delete_user()
 
-def display_user(cls):
+def display_user():
         '''
         method that displays the user
         '''
@@ -46,7 +46,7 @@ def save_credentials(credentials):
     """
     Function to save credentials
     """
-    Credentials.save_credentials()
+    credentials.save_credentials()
 
 def delete_credentials(credentials):
     """
@@ -54,7 +54,7 @@ def delete_credentials(credentials):
     """
     Credentials.delete_credentials()
 
-def display_credentials(cls):
+def display_credentials():
         '''
         method that returns the credentials
         '''
@@ -84,8 +84,11 @@ def main():
         short_code = input().lower()
 
         if short_code == "ca":
-            print("LOGIN")
+            print("CREATING A NEW ACCOUNT")
             print("-"*10)
+
+            print("app_name ....")
+            app_name = input()
 
             print("user_name ....")
             user_name = input()
@@ -93,14 +96,13 @@ def main():
             print("password ....")
             password = input()
 
-            save_user(create_user(user_name,password))
-            print(f"New Account {user_name} {password} created")
+            save_credentials(create_credentials(app_name,user_name,password))
+            print(f"New Account {app_name} user_name: {user_name} password: {password} created")
             print("\n")
-            print(f"user_name:{user_name}/n password:{password}")
             
            
         elif short_code =="dc":
-            if display_credentials("cls"):
+            if display_credentials():
                 print("Here is a list of all your accounts")
                 print('\n')
                 
