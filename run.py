@@ -64,13 +64,13 @@ def find_credentials(credentials):
     """
     method that finds the credentials
     """
-    return Credentials.find_credentials()
+    return Credentials.find_credentials(credentials)
 
-def existing_credentials ():
+def existing_credentials (credentials):
     """
     method that finds existing credentials
     """
-    return Credentials.existing_credentials()
+    return Credentials.credentials_exist(credentials)
 
 
 
@@ -127,15 +127,21 @@ def main():
                     print("Enter the account name you want to search for")
 
                     search_credentials = input()
-                    if find_credentials(search_credentials):
-                            search_credentials = delete_credentials(search_credentials)
-                            print(f"{search_credentials.app_name} {search_credentials.user_name}")
+                    if existing_credentials(search_credentials):
+                            search_cred = find_credentials(search_credentials)
+                            print(f"{search_cred.app_name} {search_cred.user_name}")
                             print('-' * 20)
 
-                            print(f"Password.......{search_credentials.password}")
+                            print(f"Password.......{search_cred.password}")
                            
                     else:
                             print("That account does not exist")
+
+        elif short_code == "ex":
+            print("bye........")
+            break
+        else:
+            print("I really didn't get that. Please use the short codes")
    
         
 
