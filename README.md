@@ -37,10 +37,6 @@ The technologies are ;
 :small_blue_diamond: PYTHON 3.9
 
 
-### LINK TO VIEW CODE
-
-https://github.com/Aprilwairimu/Password-locker.git
-
 ### :telephone_receiver: CONTANCT INFORMATION
 
 Find me at wairimuapril@gmail.
